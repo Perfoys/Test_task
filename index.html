@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="Header">
+        <div class="Header__content">
+            <div class="Header__logo">
+                <div class="Logo-img"><img src="images/Logo.png" alt="логотип"></div>
+                <h1 class="Logo-header">Название компании</h1>
+                <p class="Logo-title">самая клевая компания</p>
+            </div>
+            <div class="Header__contact">
+                <div><a href="#">+ 7 (499) 777-77-77</a></div>
+                <div><a href="#">+ 7 (499) 777-77-77</a></div>
+            </div>
+        </div>
+    </header>
+    <main class="Main">
+        <div class="Main__form-block">
+            <div class="Main__content">
+                <div class="Main__form-block__feedback">
+                    <form class="Feedback-form" method="POST">
+                        <h2>ФОРМА С КНОПКОЙ</h2>
+                        <div class="Feedback-form__block">
+                            <h2>ОСТАВЬ ТЕЛЕФОН И ПОЛУЧИ ЧТО-ТО ОФИГЕННОЕ</h2>
+                            <input id="number-input" type="tel" name="tel" placeholder="Введите номер">
+                            <input id="submit-input" type="submit" name="submit" value="ПОЛУЧИТЬ">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="Main__slider">
+            <div class="Main__content">
+                <h2>ТУТ У НАС СЛАЙДЕР</h2>
+                <div class="Slider-cover">
+                    <div class="Slide-control">
+                        <img class="image-slide" src="images/1slide.png" alt="первый слайд">
+                        <img class="image-slide" src="images/2slide.png" alt="второй слайд">
+                        <img class="image-slide" src="images/3slide.png" alt="третий слайд">
+                    </div>
+                </div>
+                <div class="Circle-container">
+                    <div class="Slider-circle"><div class="Circle-active"></div></div>
+                    <div class="Slider-circle"><div class="Circle-non-active"></div></div>
+                    <div class="Slider-circle"><div class="Circle-non-active"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="Main__info">
+            <div class="Main__content">
+                <h2>ПРОСТО ТЕКСТОВОЙ БЛОК</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae condimentum ipsum. 
+                    Morbi accumsan, neque id imperdiet rutrum, ante ante accumsan nibh, ut consectetur tellus 
+                    purus sed nisl. Duis et elit eros. Nullam vel egestas massa. Fusce elementum justo quis diam 
+                    mollis fermentum. Proin sed dapibus est. Suspendisse nec vestibulum sem. Nulla nunc ex, 
+                    tincidunt at placerat ac, luctus vitae velit. Nam fermentum justo elit, at aliquam justo 
+                    lobortis non. Nunc sit amet nisi aliquet massa pretium mattis vitae at ipsum. 
+                    Nullam eleifend lorem vitae lectus tristique, at mollis mauris fringilla. 
+                    Sed gravida mauris venenatis magna accumsan cursus. 
+                    Nam nec elit eget leo ultrices venenatis ut sed arcu. 
+                </p>
+            </div>
+        </div>
+        <div class="Main__calculate-form" id="calculator">
+            <div class="Main__content">
+                <h2>КАЛЬКУЛЯТОР<br>(СТОИМОСТЬ ПОЛЬЗОВАТЕЛЬ УЗНАЕТ ПО ТЕЛЕФОНУ)</h2>
+                <div class="Items">
+                    <div class="Item">
+                        <img src="images/1.png" alt="одностворчатое">
+                        <div><a class="select-item" id="1" href="#calculator">Одностворчатое</a></div>
+                    </div>
+                    <div class="Item">
+                        <img src="images/2.png" alt="двустворчатое">
+                        <div><a class="select-item" id="2" href="#calculator">Двустворчатое</a></div>
+                    </div>
+                    <div class="Item">
+                        <img src="images/3.png" alt="трехстворчатое">
+                        <div><a class="select-item" id="3" href="#calculator">Трехстворчатое</a></div>
+                    </div>
+                    <div class="Item">
+                        <img src="images/4.png" alt="балконный блок">
+                        <div><a class="select-item" id="4" href="#calculator">Балконный блок</a></div>
+                    </div>
+                    <div class="Item">
+                        <img src="images/5.png" alt="остекление балкона">
+                        <div><a class="select-item" id="5" href="#calculator">Остекление балкона</a></div>
+                    </div>
+                </div>
+                <form class="Calculator__form" id="second-form" method="POST">
+                    <div class="Calculator">
+                        <div class="Calculator__picture">
+                            <div id="width">ширина</div>
+                            <div id="height">высота</div>
+                            <div id="img-block"><img src="images/1.png" alt="вид окна"></div>
+                            <div class="Inline-div">
+                                <p>ширина, см</p>
+                                <input type="text" name="width" maxlength="4">
+                            </div>
+                            <div class="Inline-div" id="X">X</div>
+                            <div class="Inline-div">
+                                <p>высота, см</p>
+                                <input type="text" name="height" maxlength="4">
+                        </div>
+                    </div>
+                    <div class="Calculator__selection">
+                        <h2 id="form-header">Одностворчатое окно КВЕ</h2>
+                        <span class="calculator-span">1. Критерий выбора</span>
+                        <input class="radio" type="radio" id="radio1" name="radio" value="radio 1">пункт выбора 1
+                        <input class="radio" type="radio" id="radio2" name="radio" value="radio 2">пункт выбора 2
+                        <input class="radio" type="radio" id="radio3" name="radio" value="radio 3">пункт выбора 3
+                        <span class="calculator-span">2. Выберите открывание створки</span>
+                        <div class="Select-style">
+                            <select class="Form-select">
+                                <option>Не открывается</option>
+                                <option>Открывается на половину</option>
+                                <option>Полностью открывается</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="input-block">
+                        <input type="tel" id="number" name="number" placeholder="Введите номер">
+                        <input type="submit" id="submit" name="submit" value="РАССЧИТАТЬ">
+                    </div>
+                </div>
+                </form>
+                </div>
+            </div>
+    </main>
+    <footer class="Footer">
+        <div class="Footer__content">
+            <h3>
+                просто<br>
+                скромный футер
+            </h3>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
